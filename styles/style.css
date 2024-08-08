@@ -1,0 +1,595 @@
+/* BY DEFAULT*/
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+}
+/* BY DEFAULT*/
+/* -------- */
+/* RE-USE CASE!!START!!*/
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.4rem;
+}
+.margin {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.btn {
+  align-items: center;
+  padding: 0.6rem 2.8rem 0.6rem 2.8rem;
+  border-radius: 4.6rem;
+  background: rgb(230, 83, 60);
+  border: 0.1rem solid rgb(230, 83, 60);
+}
+/* RE-USE CASE!!END!!*/
+/* --------- */
+/* NAVIGATION PART */
+header {
+  background: linear-gradient(180deg, rgb(45, 45, 45), rgba(50, 49, 49, 0) 91%);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  position: relative;
+}
+.navigation .fitness {
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 2.2rem;
+  font-weight: 740;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+}
+.nav-bar {
+  position: relative;
+}
+.nav-bar ol {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.4rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 4rem;
+  box-sizing: border-box;
+  width: 46.5 rem;
+  height: 4rem;
+}
+.nav-bar li {
+  list-style: none;
+  position: relative;
+  right: 1.7rem;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: relative;
+  top: 0.6rem;
+  left: -1rem;
+}
+/* NAVIGATION PART!END!!! */
+/* -------------- */
+/* button part:'HOME' nav-part !!START!! */
+.home {
+  align-items: center;
+  padding: 0.6rem 2.8rem 0.6rem 2.8rem;
+  border-radius: 4.6rem;
+  background: rgb(230, 83, 60);
+  position: absolute;
+  left: -3.9rem;
+}
+.home a {
+  position: relative;
+  top: 0.1rem;
+  left: -0.2rem;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.nav-bar li a:hover {
+  color: rgb(199, 196, 196);
+  text-shadow: 0 0.6rem 0.3rem rgba(44, 6, 57, 0.3);
+}
+/* 'home' button part done which is the part of navigation>nav-bar!!END!! */
+/* -------------- */
+/* header-container (main body part) include banner image+get body part */
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+}
+.header-content {
+  /*-- GET-BODY FULL PART--*/
+  /* banner-content(h1+p) + banner-button(two-btn) */
+  position: relative;
+}
+.banner-content h1 {
+  /* GET BODY */
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 6.8rem;
+  font-weight: 840;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  position: relative;
+  top: 4.4rem;
+}
+#shape {
+  /* getbody-shape part */
+  font-family: Dancing Script;
+}
+.banner-content p {
+  /* paragraphh content in GET-BODY */
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  position: relative;
+  top: 5.7rem;
+}
+.banner-button {
+  /* two button is here,one is JOIN CLUB NOW and another one is DOWNLOAD APP */
+  display: flex;
+  gap: 2.5rem;
+  padding-top: 7.3rem;
+}
+/* join club button */
+.joinClub-now-button {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.joinClub-now-button h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  position: relative;
+  top: 0.1rem;
+}
+/* End of join club now */
+/* -------- */
+/* start download-button */
+.downloadApp-button {
+  padding-top: 0.09rem;
+  padding-bottom: 0.08rem;
+  background: #0f0f0f;
+  border: 0.12rem solid white;
+}
+.downloadApp-button h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  letter-spacing: 0.01rem;
+}
+/* 3part is here,img,banner-card350,banner-card500 */
+.banner-image-card {
+  /* head of img,banner-card350,banner-card500 */
+  justify-self: end;
+  position: relative;
+  padding-right: 5.4rem;
+}
+.banner-card500 {
+  /* simple banner-card500 */
+  box-sizing: border-box;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(1rem);
+  background: rgba(48, 48, 48, 0.54);
+  position: relative;
+  top: -55rem;
+  right: -22rem;
+  width: 20rem;
+  height: 9.2rem;
+}
+/* h1,p is mix in this class of banner-card500 */
+.banner-card500-content {
+  position: relative;
+  left: 3rem;
+  top: 0.7rem;
+}
+.banner-card500 h1 {
+  /* 500+ */
+  color: rgb(250, 250, 249);
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 2.4rem;
+  letter-spacing: 0.03rem;
+}
+.banner-card500 p {
+  /* free workout videos */
+  color: rgba(255, 255, 255, 0.35);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  top: -1rem;
+}
+.banner-card350 {
+  /* banner-card350-content and card500-red-circle is the part of banner-card350 */
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.2rem;
+  backdrop-filter: blur(0.7rem);
+  background: rgba(48, 48, 48, 0.54);
+  position: relative;
+  top: -15rem;
+  left: -10rem;
+  width: 20rem;
+  height: 9.2rem;
+}
+/* banner-card350 is the head class of this class */
+.banner-card350-content {
+  /* h1,p is the part of this class, */
+  position: relative;
+  right: -7rem;
+  top: 0.5rem;
+}
+.banner-card350 h1 {
+  /* 350+ */
+  color: rgb(250, 250, 249);
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 2.4rem;
+  letter-spacing: 0.03rem;
+  position: relative;
+  top: -4rem;
+}
+.banner-card350 p {
+  /* video tutorial */
+  color: rgba(255, 255, 255, 0.35);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  top: -5rem;
+}
+.card500-red-circle {
+  /* card500-red-circle is the part of banner-card350*/
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5rem;
+  background: rgb(230, 83, 60);
+  position: relative;
+  top: 2.5rem;
+  right: -2rem;
+}
+/* END OF HEADER PART */
+
+/* Start 'CHANGE YOUR HABIT'div section */
+/* second section */
+.change-your-habit {
+  /*head class Of this section*/
+  position: relative;
+  top: -11.2rem;
+}
+/* paragraph part content(h1+p) */
+.change-your-habit-content {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.change-your-habit-content h1 {
+  /* change your habits */
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.5rem;
+  font-weight: 870;
+}
+/*We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.  */
+/* explanation part */
+.change-your-habit-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.practising-images {
+  /* Exercise images+content are here,
+  movement,time,practise,weight loss+'content' */
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+}
+.image img {
+  /* part of image without image content */
+  width: auto;
+  height: auto;
+  border-radius: 10rem;
+  border: 0.1rem solid rgb(82, 78, 78);
+  object-fit: cover;
+}
+.img-content {
+  /* text-align: center; */
+}
+.img-content h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.img-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+/* CHANGE YOUR HABIT div part is done */
+/* run an extra mile easily startin this part */
+
+.run-contain {
+  /* full content part,+run image */
+  margin-top: 6.5rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+  padding-left: 4.3rem;
+  border-radius: 21px;
+  background: rgb(34, 34, 34);
+}
+.run-written-content h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.5rem;
+  font-weight: 850;
+  text-align: left;
+}
+.run-written-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+}
+.run-contain button {
+  /* button part and add extra class[btn]in html */
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 570;
+  text-align: center;
+  border: 1px solid rgb(230, 83, 60);
+  padding: 1.3rem 3.9rem;
+  margin-top: 1.5rem;
+}
+.run-only-image img {
+  /* only run image */
+  width: 36rem;
+  height: 31rem;
+  border-radius: 19px;
+  object-fit: cover;
+}
+/* Another BMI-calculator part */
+.BMI-calculator {
+  position: relative;
+  left: 210px;
+  padding-bottom: 5rem;
+  top: -4rem;
+}
+.BMI-calculator h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+}
+.BMI-calculator p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+/* END of BMI calculator part (h1+p) */
+
+/* start [BMI CALCULATOR CHART+ CALCULATE YOUR BMI] part */
+.BMI {
+  background: rgb(34, 34, 34);
+  /* whole section under this class */
+}
+.BMI-chart-table-content {
+  /* two main class are devided by here */
+  /* 1.bmi calculator chart and 2.calculate your bmi */
+  display: flex;
+  justify-content: space-around;
+  padding-top: 6rem;
+}
+/* BMI TABLE PART  */
+.BMI-calculator-chart th,
+.BMI-calculator-chart tr,
+.BMI-calculator-chart td,
+.BMI-calculator-chart table {
+  border-collapse: collapse;
+  border: 2px solid rgb(106, 105, 105);
+}
+.BMI-calculator-chart td {
+  /* table data decoration without thead */
+  color: rgb(130, 127, 127);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.02rem 1.3rem;
+}
+.BMI-calculator-chart th {
+  /* thead decoration */
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.01rem 1.3rem;
+}
+.BMI-calculator-chart h1 {
+  /* head caption of this table  decoration */
+  color: rgb(255, 250, 250);
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: 3.1rem;
+}
+/* BMI CALCULATOR CHART-part is done */
+/* calculate your BMI-part is start */
+.calculate-your-BMI-content {
+  margin-bottom: 10rem;
+  padding-left: 7rem;
+}
+.calculate-your-BMI-content h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.calculate-your-BMI-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  top: -0.6rem;
+}
+/* [height,weight,age,sex] -class */
+.height-weight {
+  display: flex;
+  gap: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* calculate your BMI content>class, part form height,weight,age */
+.height input,
+.weight input,
+.age input {
+  width: 282.5px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: 0.3rem solid rgba(192, 189, 189, 0.1);
+}
+.gender {
+  /* select ,option form  */
+  /* gender sex */
+  width: 289.5px;
+  height: 51px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(148, 148, 148, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 0.76rem;
+  border-radius: 5px;
+  border: 0.3rem solid rgba(192, 189, 189, 0.1);
+}
+/* select,option form */
+/* select an activity factor */
+.activity {
+  width: 590.5px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(148, 148, 148, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 5px;
+  border: 0.3rem solid rgba(192, 189, 189, 0.1);
+}
+/* internal placeholder */
+.height ::placeholder,
+.weight ::placeholder,
+.age ::placeholder {
+  color: rgba(148, 148, 148, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* form tag button */
+.calculate-your-BMI button {
+  color: rgb(242, 242, 243);
+  margin-left: 7rem;
+  position: relative;
+  top: -8rem;
+  padding: 12px 30px;
+}
+.trainer-team-image{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap:2rem;
+  background-color:rgb(72, 72, 72);
+  padding: 3rem;
+  border-radius:1.4rem;
+  width: 1050px;
+}
+.trainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.6rem;
+  object-fit: cover;
+}
+.trainer-name{
+  position: relative;
+  top:-120px;
+  left:10px;
+}
+.meet-our-team-content {
+  text-align: center;
+}
+.meet-our-team-content h1{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
+}
+.meet-our-team-content p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
+  font-weight: 400;
+}
+.trainer-name h1{
+  color: rgb(247, 242, 242);
+  font-size: 30px;
+  font-weight: 600;
+}
+.trainer-name p {
+  font-size: 17px;
+  font-weight: 500;
+  font-size:17px;
+}
