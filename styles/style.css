@@ -7,6 +7,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   /* 1rem = 10px */
 }
 body {
@@ -45,7 +46,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 5rem;
-  position: relative;
 }
 .navigation .fitness {
   color: rgb(230, 83, 60);
@@ -55,12 +55,12 @@ header {
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
-  position: relative;
+  /* position:relative;
   top: -2rem;
-  left: 1rem;
+  left: 1rem; */
 }
 .nav-bar {
-  position: relative;
+  align-self: center;
 }
 .nav-bar ol {
   display: flex;
@@ -549,47 +549,140 @@ header {
   top: -8rem;
   padding: 12px 30px;
 }
-.trainer-team-image{
+/* this is another section */
+/* section name is TEAM */
+
+.meet-our-team-content {
+  /* whole content stored */
+  text-align: center;
+}
+.meet-our-team-content h1 {
+  /* meet our team */
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
+}
+.meet-our-team-content p {
+  /* we blv to ..gym-paragraph content */
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
+  font-weight: 400;
+}
+.trainer-team-image {
+  /* parent class of this img and img content */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 2rem;
-  column-gap:2rem;
-  background-color:rgb(72, 72, 72);
-  padding: 3rem;
-  border-radius:1.4rem;
+  column-gap: 2rem;
+  background-color: rgb(28, 28, 28);
+  padding: 2.5rem;
+  border-radius: 1.4rem;
   width: 1050px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
 .trainer img {
+  /* child class just like'trainer' */
+  /* six img+content stored same class name'TRAINER' */
   height: 100%;
   width: 100%;
   border-radius: 1.6rem;
   object-fit: cover;
 }
-.trainer-name{
+.trainer {
+  /* siz img stored under the class */
   position: relative;
-  top:-120px;
-  left:10px;
 }
-.meet-our-team-content {
-  text-align: center;
+.trainer-name {
+  /* trainer introduction*/
+  position: absolute;
+  top: 240px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.meet-our-team-content h1{
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-weight: 800;
-}
-.meet-our-team-content p{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 17px;
-  font-weight: 400;
-}
-.trainer-name h1{
+.trainer-name h1 {
+  /* name introduction */
   color: rgb(247, 242, 242);
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 600;
 }
 .trainer-name p {
+  /* identity */
   font-size: 17px;
   font-weight: 500;
-  font-size:17px;
+  font-size: 17px;
+  position: absolute;
+  top: 50px;
+  color: #b4b4b4;
 }
+
+/* another footer section */
+footer {
+  /* last section */
+  background-color: #1a1a1a;
+}
+.footer-part {
+  /* fitnerr,ger started,get started2 =3 class is here */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.get-started2,
+.get-started {
+  /* two class name */
+  margin-left: 50px;
+  padding-top: 30px;
+  position: relative;
+}
+.get-started2 h1,
+.get-started h1 {
+  /* class head */
+  color: rgb(215, 211, 211);
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  left: 8px;
+}
+/* list tag use */
+.get-started2 li,
+.get-started li {
+  /* sequence list */
+  list-style: none;
+  color: #858282;
+  font-family: Inter;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: left;
+}
+/* unorder list  */
+.get-started2 ul,
+.get-started ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fitness {
+  /* first class name in footer section */
+  margin-left: 73px;
+  position: relative;
+}
+.fitness h1 {
+  /* fitness design */
+  color: rgb(230, 83, 60);
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+}
+.fitness p {
+  /* fitness paragrapgh content */
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+  position: absolute;
+  top: 130px;
+}
+/* end */
